@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/data', (req, res) => {
-    res.send(db.readData());
+    res.write(JSON.stringify(db.readData()));
 });
 
 const miscRouter = require('./routes/misc');
