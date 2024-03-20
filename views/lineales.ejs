@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Tests and Stuff | Linear</title>
+        <link rel="stylesheet" href="../stylesheets/index.css">
+        <link rel="icon" type="image/x-icon" href="../img/laroca.png">
+    </head>
+    <body>
+    <div class="parent">
+        <h1>Equations :D</h1>
+        <p>Simple equation solver, put your equation in the format:
+            ax+b=c, let a be the x coefficient, b be an added or subtracted value to x
+            to get c.
+        </p>
+
+        <div class="equationFormOutline"><div class='module'>
+        <form name="myForm" action="" method="GET" id='linearform'>
+            Enter the values of the variables: <br>
+            <label for="linear_a">a = </label>
+            <input type="number" name="a" value="" id="linear_a"> <br>
+            <label for="linear_b">b = </label>
+            <input type="number" name="b" value="" id="linear_b"> <br>
+            <label for="linear_c">c = </label>
+            <input type="number" name="c" value="" id="linear_c"> <br>
+            <input type="button" name="button" value="Solve!" onClick="linear(this.form)">
+        </form>
+        </div></div>
+
+        <p id="linear_ans">Answer: </p>
+
+        <a href="/">Home</a>
+    </div>
+    <script src="../scripts/equaciones-script.js"></script>
+    </body>
+</html>

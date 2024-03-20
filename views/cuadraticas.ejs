@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Tests and Stuff | Quadratic</title>
+        <link rel="stylesheet" href="../stylesheets/index.css">
+        <link rel="icon" type="image/x-icon" href="../img/laroca.png">
+    </head>
+    <body>
+        <div class="parent">
+            <h1>Quadratic Equations :D</h1>
+            <p>
+                Quadratic equation solver using the Quadratic Formula. <br><br>
+                Put your equation in the form ax²+bx+c=0 and plug the values of the variables below. 
+            </p>
+
+            <div class="equationFormOutline"><div class='module'>
+                <form name="myForm" action="" method="GET" id='quadraticform'>
+                    Enter the values of the variables: <br><br>
+                    <label for="quadratic_a">a = </label>
+                    <input type="number" name="a" value="" id="quadratic_a"> <br>
+                    <label for="quadratic_b">b = </label>
+                    <input type="number" name="b" value="" id="quadratic_b"> <br>
+                    <label for="quadratic_c">c = </label>
+                    <input type="number" name="c" value="" id="quadratic_c"> <br>
+                    <input type="button" name="button" value="Solve!" onClick="quadratic(this.form)">
+                </form>  
+            </div></div>
+
+            <p id="x1">x₁ = </p>
+            <p id="x2">x₂ = </p>
+        
+            <a href="/">Home</a>      
+        </div>
+        <script src="../scripts/equaciones-script.js"></script>
+    </body>
+</html>
