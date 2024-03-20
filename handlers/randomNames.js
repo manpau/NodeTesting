@@ -1,15 +1,12 @@
 const names = require('./../data/names.json');
 
 module.exports = (req) => {
-    let target = names;
-    let result;
+    let random = Math.round(Math.random()*49)
     switch (req) {
         case 1:
-            result = names.female[Math.round(Math.random()*49)];
-            return result;
+            return names.female[random];
         case 0:
-            result = names.male[Math.round(Math.random()*49)];
-            return result;
+            return names.male[random];
         default:
             return;
     }
