@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 
 const randomName = require('./handlers/randomNames')
+const db = require('./handlers/db_handler');
 
 app.use(express.static('./public'));
 
@@ -14,6 +15,10 @@ app.get('/', (req, res) => {
     let Name = randomName(Math.floor(Math.random()*2));
     console.log(Name);
     res.render('index', {name: Name});
+});
+
+app.get('/data', (req, res) => {
+    res.send(db.readData());
 });
 
 const miscRouter = require('./routes/misc');

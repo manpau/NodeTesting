@@ -1,0 +1,8 @@
+{
+    "flappy": [
+        {"name": "HIM", "points": 100}
+    ],
+    "pointlessGame": [
+        {"name": "HIM", "points": 100}
+    ]
+}
