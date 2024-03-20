@@ -9,7 +9,7 @@ module.exports.readData = (req) => {
             console.log(error);
         }
         
-        console.log(data);
-        return data;
+        dataJson = JSON.parse(data);
+        return dataJson;
     })
 }
