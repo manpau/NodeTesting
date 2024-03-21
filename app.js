@@ -1,5 +1,5 @@
 require('dotenv').config();
-const PORT = process.env.PORT;
+const PORT = 3000;
 
 const express = require('express');
 const app = express();
@@ -18,7 +18,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/data', (req, res) => {
-    res.write(JSON.stringify(db.readData()));
+    console.log(db.readData());
+    res.send(db.readData());
 });
 
 const miscRouter = require('./routes/misc');
